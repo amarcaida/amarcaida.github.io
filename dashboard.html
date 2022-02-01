@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dashboard</title>
+        <link rel="icon" href="images/PSHS_System_Logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <style>
+            body, html, h1, h2, a, p, div{
+                margin: 0;
+            }
+            body{
+                width: 1440px;
+                height: 1200px;
+            }
+            header{
+                height: 10%;
+                width: 100%;
+                background-color:#dacec7;
+                position: relative;
+            }
+            .h-img{
+              float: left;
+              margin-left: 1%;
+              width: 6%;
+              height: 75%;
+              position: absolute;
+              top: 50%;
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              border: 1px solid #222222;
+            }
+            .h-title{
+              height: 75%;
+              width: 93%;
+              position: absolute;
+              top: 50%;
+              left: 7%;
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+            .h-title h1, .h-title p{
+              padding-left: 15px;
+            }
+            nav{
+                width: 288px;
+                height: 100%;
+                float: left;
+                background-color:#222222;
+            }
+            .content{
+                width: 100%;
+                 height: 800px;
+                display: block;
+            }
+            .content1{
+                width: 1152px;
+                height: 100%;
+                float: left;
+            }
+            #userprofile{
+                width: 100%;
+                height: 14%;
+                border-bottom: 1px solid white;
+            }
+            .p-img{
+                width: 30%;
+                float: left;
+                padding-top: 15px;
+                padding-left: 15px;
+            }
+            .p-desc{
+                width: 60%;
+                float: left;
+                padding-top: 15px;
+            }
+            #announcements{
+                height: 30%;
+                width: 100%;
+                background-color:#272e3d;
+            }
+            #mycourses{
+                width: 70%;
+                height: 70%;
+                float: left;
+                background-color:#2d3442;
+            }
+            #courseoverview{
+                width: 30%;
+                height: 70%;
+                float: left;
+                background-color:#dacec7;
+            }
+            .link{
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            #course{
+                width: 90%;
+                height: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 5%;
+                background-color: #dacec7;
+            }
+            h5{
+                margin: 20px 0px 0px 10px;
+                padding-top: 20px;
+            }
+            h1:not(header h1){
+                padding: 5%;
+                padding-bottom: 0px;
+            }
+            p:not(#course p, header p){
+                padding-left: 5%;
+            }
+            #courseoverview h2{
+                padding-left: 5%;
+            }
+            #course h3, #course p{
+                margin: 10px 0px 0px 10px;
+            }
+            footer{
+                float: none;
+                height: 30%;
+                background-color: #c4b3a9;
+            }
+            nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+            }
+            nav a{
+              width: 100%;
+            }
+            nav li a {
+              display: block;
+              color: white;
+              padding: 15px;
+              text-decoration: none;
+            }
+            nav li a:hover{
+              background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+          <div class="h-img">
+            <img src="images/PSHS_System_Logo.png" alt="logo">
+          </div>
+          <div class="h-title">
+            <p>Department of Scienct and Technology</p>
+            <h1>Philippine Science High School</h1>
+            <h1>Central Luzon Campus</h1>
+          </div>
+        </header>
+        <div class="content">
+            <nav>
+                <div id="userprofile">
+                 <div class="p-img"><img src="" alt="user"></div>
+                 <div class="p-desc">
+                     <h2>Username</h2>
+                     <p>Message</p>
+                 </div>
+               </div>
+               <ul>
+                 <li><a href="">piss</a></li>
+               </ul>
+             </nav>
+         <div class="content1">
+             <div id="announcements">
+               <p></p>
+               <h1>Site Announcements</h1>
+               <p>Oops! It seems like no announcements have been posted yet. Check back later.</p>
+             </div>
+             <div id="mycourses">
+                 <h1>MY COURSES</h1>
+                 <a class="link" href="mycourses.html">My Courses</a>
+                 <div id="course">
+                     <h5>Subject Course</h5>
+                     <h3>Subject Name</h3>
+                     <p>Subject description here</p>
+                 </div>
+             </div>
+             <div id="courseoverview">
+                 <h1>COURSE CATEGORIES</h1>
+                 <a class="link" href="courseoverview.html">Course Categories</a>
+                 <h2>CID 2021-2022</h2>
+                 <p>Subject Course</p>
+            </div>
+         </div>
+        </div>
+        <footer>
+            <h1>FOOTER</h1>
+        </footer>
+    </body>
+</html>
