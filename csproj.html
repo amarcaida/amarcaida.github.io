@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grades</title>
+        <link rel="icon" href="images/PSHS_System_Logo.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <script src="https://kit.fontawesome.com/374a8d26ef.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        <style>
+            body, html, h1, h2, a, p, div{
+                margin: 0;
+            }
+            body{
+                background-color:#c4b3a9;
+            }
+            h1, h2, h3{
+                font-family: 'Oswald', sans-serif;
+                font-weight: 700;
+            }
+            nav h2{
+                margin-left: 5%;
+                margin-top: 5%;
+            }
+            p{
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 400;
+            }
+            body{
+                width: 1440px;
+                height: 1000px;
+            }
+            header{
+                height: 10%;
+                width: 100%;
+                background-color:#dacec7;
+                position: relative;
+                line-height: 15px;
+            }
+            header img{
+                width: 85px;
+                height: 85px;
+                object-fit: cover;
+            }
+            header h1{
+                line-height: 32px;
+            }
+            .h-img{
+              float: left;
+              margin-left: 1%;
+              width: 6%;
+              height: 75%;
+              position: absolute;
+              top: 50%;
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+            .h-title{
+              height: 75%;
+              width: 93%;
+              position: absolute;
+              top: 50%;
+              left: 7%;
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+            .h-title h1, .h-title p{
+              padding-left: 15px;
+            }
+            nav{
+                width: 20%;
+                height: 100%;
+                float: left;
+                background-color:#222222;
+            }
+            .content{
+                float: left;
+                width: 80%;
+                height: 100%;
+                display: block;
+            }
+            .content1{
+                width: 100%;
+                height: 70%;
+                float: left;
+                background-color: #2d3442;
+            }
+            #userprofile{
+                width: 100%;
+                height: 10%;
+                border-bottom: 1px solid white;
+            }
+            .p-img{
+                width: 30%;
+                float: left;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+            .p-desc{
+                width: 60%;
+                float: left;
+                padding-top: 15px;
+                color: white;
+            }
+            footer{
+                float: left;
+                height: 24%;
+                width: 95%;
+                background-color: #c4b3a9;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              font-family: 'Roboto Condensed', sans-serif;
+              font-weight: 400;
+              font-size: 130%;
+            }
+            a, li{
+                text-decoration: none;
+                color: white;
+            }
+            li.notworking{
+              display: block;
+              color: white;
+              padding: 15px;
+              text-decoration: none;   
+            }
+            nav li a {
+              display: block;
+              color: white;
+              padding: 15px;
+              text-decoration: none;
+            }
+            nav li a:hover{
+              background-color: #1a1e27;
+              color: #B0ABC2;
+            }
+            footer{
+                padding-top: 5%;
+                padding-left: 5%;
+            }
+            #title{
+                margin: 3% auto 3% auto;
+                text-align: center;
+                width: 80%;
+                height: 10%;
+                background-color: #dacec7;
+            }
+            .column{
+                height: 80%;
+                width: 50%;
+                background-color: #dacec7;
+                float: left;
+            }
+            .in-column{
+                height: 90%;
+                width: 100%;
+                padding: 3%;
+            }
+            .row{
+                height: 7%;
+                font-size: 130%;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            .second-row{
+                text-align: center;
+                height: 7%;
+                font-size: 130%;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            .row-title{
+                height: 10%;
+                font-size: 200%;
+                font-family: 'Oswald', sans-serif;
+                padding-bottom: 3%;
+            }
+            #content-main{
+                height: 80%;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            @media(max-width: 1440px){
+                body{
+                    width: auto;
+                }
+            }
+            @media (max-width: 1216px){
+                #userprofile{
+                    display: none;
+                }
+                .h-title{
+                    padding: 30px;
+                    width: auto;
+                }
+            }
+            @media (max-width: 760px){  
+                body{
+                    height: 1000px;
+                }
+                .content{
+                    width: 100%;
+                } 
+                .h-title{
+                    padding-left: 15%;
+                    font-size: 60%;
+                }
+                .h-title h1{
+                    width: 100%;
+                }
+                nav{
+                    width: 100%;
+                    height: auto;
+                }
+                nav li{
+                    display: inline;
+                    float: left;
+                }
+                #title{
+                    display: table;
+                    position: relative;
+                    overflow: hidden;
+                }
+                #title h1{
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 130%;
+                }
+                .row-title{
+                    font-size: 140%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+          <div class="h-img">
+            <img src="images/PSHS_System_Logo.png" alt="logo">
+          </div>
+          <div class="h-title">
+            <p>Department of Scienct and Technology</p>
+            <h1>Philippine Science High School</h1>
+            <h1>Central Luzon Campus</h1>
+          </div>
+        </header>
+        <nav>
+            <div id="userprofile">
+             <div class="p-img"><img src="images/profile-icon.png" alt="user"></div>
+             <div class="p-desc">
+                 <h2>USERNAME</h2>
+                 <p><i class="fas fa-comment"></i> Message</p>
+             </div>
+           </div>
+           <div class="subjnav">
+            <ul>
+                <li class="notworking">Course Sections*</li>
+                <li class="notworking">Participants*</li>
+                <li class="notworking">Badges*</li>
+                <li><a href="">Grades</a></li>
+              </ul>
+          </div>
+           <ul>
+             <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+             <li><a href="sitehome.html"><i class="fas fa-home"></i> Site Home</a></li>
+           </ul>
+         </nav>
+        <div class="content">
+         <div class="content1">
+             <div id="title">
+                 <h1>Overview Report - Student Name</h1>
+             </div>
+             <div id="content-main">
+                 <div class="column">
+                     <div class="in-column">
+                        <div class="row-title">Subject Courses</div>
+                        <div class="row">Biology 1</div>
+                        <div class="row">Chemistry 1</div>
+                        <div class="row">Computer Science 3</div>
+                        <div class="row">English 3</div>
+                        <div class="row">Filipino 3</div>
+                        <div class="row">Health 3</div>
+                        <div class="row">Mathematics 3</div>
+                        <div class="row">Physical Education 3</div>
+                        <div class="row">Physics 1</div>
+                        <div class="row">Social Science 3</div>
+                        <div class="row">Statistics 1</div>
+                        <div class="row">Valed Education 3</div>
+                     </div>
+                 </div>
+                 <div class="column">
+                    <div class="in-column">
+                        <div class="row-title">Grades</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                        <div class="second-row">--</div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <footer>
+            <h1>Knowledge Hub</h1>
+            <h2>Philippine Science High School - Central Luzon Campus</h2>
+            <p><i class="fas fa-globe"></i> https://clc.pshs.edu.ph</p>
+            <p><i class="fas fa-phone-alt"></i> Tel. No : (045) 499 0136</p>
+            <p><i class="fas fa-envelope"></i> khub@clc.pshs.edu.ph</p>
+        </footer>
+        </div>
+    </body>
+</html>
