@@ -6,9 +6,54 @@
   object-fit: cover;
 }
 
+header{
+  height: 10%;
+  width: 100%;
+  position: relative;
+  line-height: 15px;
+}
+
+.logo{
+  float: left;
+  width: 17%;
+  height: 75%;
+  position: absolute;
+  top: 8vh;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-70%);
+}
+
+.name{
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  top: 85%;
+  left: 11.5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 0px;
+}
+
+.name h1, .name p{
+  padding-left: 15px;
+  color: white;
+}
+
+h1, h2, h3{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 90%;
+}
+
 .form-container{
   position: absolute;
-  top: 30vh;
+  top: 15vh;
   background-color: #dacec7;
   padding: 30px;
   border-radius: 15px;
