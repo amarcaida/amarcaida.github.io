@@ -150,10 +150,11 @@
                 height: 10%;
                 background-color: #dacec7;
             }
-		img {
-			width: 200px;
-			height: 275px;
-		}
+		    img {
+                height: 100%;
+                height: 100%;
+                object-fit: cover;
+		    }
 			nav img {
 				width: 100%;
 				height: 100%;
@@ -169,34 +170,18 @@
 				text-align: center;
 				float: left;
             }
-			#content-side {
+			.c-img {
+                float: left;
 				width: 40%;
-				padding-left: 10px;
-				padding-right: 10px;
+                height: 40%;
+				padding-left: 5%;
+				padding-right: 5%;
 				padding-top: 30px;
 				padding-bottom: 10px;
 				font-size: 18px;
 				text-align: center;
 				float: left;
 			}
-            #content-left {
-				width: 40%;
-				padding-left: 20px;
-				padding-right: 10px;
-				padding-top: 30px;
-				padding-bottom: 10px;
-				text-align: center;
-				float: left;
-            }
-            #content-right {
-				width: 40%;
-				padding-left: 10px;
-				padding-right: 10px;
-				padding-top: 30px;
-				padding-bottom: 10px;
-				text-align: center;
-				float: left;
-            }
             @media(max-width: 1440px){
                 body{
                     width: auto;
@@ -209,6 +194,12 @@
                 .h-title{
                     padding: 30px;
                     width: auto;
+                }
+            }
+            @media (max-width: 950px){
+                img{
+                    width: 100%;
+                    height: auto;
                 }
             }
             @media (max-width: 760px){  
@@ -243,30 +234,16 @@
                     vertical-align: middle;
                     font-size: 130%;
                 }
-				img {
-					width: 200px;
-					height: 275px;
-				}
-				#content-main {
-					padding-left: 30px;				
-				}
-				#content-left {
-					padding-left: 30px;				
-				}
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+				.c-img{
+                    float: none;
+                    width: 90%;
+                    height: 20%;
+                }
 			}
-			@media (max-width: 425px){ 
-				img {
-					width: 150px;
-					height: 200px;
-				}
-				#content-main {
-					padding-left: 20px;				
-				}
-				#content-left {
-					padding-left: 20px;				
-				}
-				
-            }
 			@media (max-width: 320px) {
 				img {
 					width: 120px;
@@ -336,20 +313,20 @@
            </ul>
          </nav>
         <div class="content">
-            <div id="content-main">
-				<img src="pic1.jpg" alt="pic1">
+            <div class="c-img">
+				<img src="images/pic1.jpg" alt="Jevon Rhandall Aguillan">
 				<p>Jevon Rhandall Aguillan</p>
             </div>
-			<div id="content-side">
-				<img src="pic2.jpg" alt="pic2">
+			<div class="c-img">
+				<img src="images/pic2.jpg" alt="Amber Lorraine Marcaida">
 				<p>Amber Lorraine Marcaida</p>
 			</div>
-			<div id="content-left">
-				<img src="pic3.jpg" alt="pic3">
+			<div class="c-img">
+				<img src="images/pic3.jpg" alt="Maria Jillian Montealegre">
 				<p>Maria Jilliana Montealegre</p>
 			</div>
-			<div id="content-right">
-				<img src="pic4.jpg" alt="pic4">
+			<div class="c-img">
+				<img src="images/pic4.jpg" alt="Faith Jazel Reyes">
 				<p>Faith Jazel Reyes</p>
 			</div>
 		 </div>
