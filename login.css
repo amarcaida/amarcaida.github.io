@@ -13,37 +13,39 @@ header{
   line-height: 15px;
 }
 
-.logo{
-  float: left;
-  width: 17%;
-  height: 75%;
-  position: absolute;
-  top: 8vh;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-70%);
-}
-
-.name{
-  height: 70%;
-  width: 83%;
-  position: absolute;
-  top: 8vh;
-  left: 7%;
-  left: 11.5%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  line-height: 0px;
-}
-
-.name h1, .name p{
-  padding-left: 15px;
-  color: white;
-}
-
 header img{
   width: 85px;
   height: 85px;
   object-fit: cover;
+}
+
+ header h1{
+  line-height: 32px;
+}
+
+.logo{
+  float: left;
+  margin-left: 1%;
+  width: 6%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.name{
+  height: 75%;
+  width: 93%;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ }
+
+.name h1, .name p{
+  padding-left: 15px;
+  color: white;
 }
 
 h1, h2, h3{
@@ -81,3 +83,24 @@ a {
   color: white;
   font-family: 'Oswald', sans-serif;
  }
+
+@media(max-width: 1440px){
+  body{
+    width: auto;
+  }
+}
+@media (max-width: 1216px){
+  .name{
+    padding: 30px;
+    width: auto;
+   }
+}
+@media (max-width: 760px){  
+   .name{
+     padding-left: 15%;
+     font-size: 60%;
+  }
+   .name h1{
+     width: 100%;
+  }
+}
