@@ -15,8 +15,10 @@
 }
 
 img{
-  margin-left: 30%;
-  margin-right; 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .btn{
   background-color:#221F26;
