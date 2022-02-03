@@ -40,6 +40,12 @@ header{
   color: white;
 }
 
+header img{
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+}
+
 h1, h2, h3{
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
