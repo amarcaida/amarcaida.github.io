@@ -25,9 +25,10 @@ header{
 
 .name{
   height: 70%;
-  width: 80%;
+  width: 83%;
   position: absolute;
-  top: 85%;
+  top: 8vh;
+  left: 7%;
   left: 11.5%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
