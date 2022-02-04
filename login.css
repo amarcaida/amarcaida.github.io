@@ -1,37 +1,41 @@
 .bg{
-  background: url('../images/loginBg.png') no-repeat;
+  background: url('images/loginBg.png') no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
   object-fit: cover;
 }
 
+html, body, div, h1, p{
+  margin: 0px;
+}
+
 header{
   height: 10%;
   width: 100%;
   position: relative;
-  line-height: 15px;
 }
 
 .logo{
   float: left;
-  width: 17%;
-  height: 75%;
+  width: 10%;
+  height: 70%;
   position: absolute;
-  top: 8vh;
+  top: 85%;
   -ms-transform: translateY(-50%);
   transform: translateY(-70%);
 }
 
 .name{
+  float: left;
   height: 70%;
-  width: 80%;
+  width: 75%;
   position: absolute;
   top: 85%;
-  left: 11.5%;
+  left: 90px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  line-height: 0px;
+  line-height:130%;
 }
 
 .name h1, .name p{
@@ -60,7 +64,7 @@ p{
   text-align: center;
 }
 
-img{
+img:not(div.logo img){
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -75,6 +79,12 @@ a {
   font-family: 'Oswald', sans-serif;
  }
 
+ .logo img{
+  margin: none;
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+}
 @media (max-width: 1440px){
   body{
     width: auto;
@@ -103,5 +113,11 @@ a {
 @media(max-width: 767px){
   form.form-container{
     left: 7.5%;
+  }
+}
+
+@media (max-width: 430px){
+  header h1, p{
+    font-size: 84%;
   }
 }
