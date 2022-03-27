@@ -401,7 +401,7 @@
                 switch(x){
                     case "HEAL":
                         if(bHP>0){
-                            document.getElementById('text').innerHTML="Select character to HEAL.";
+                            document.getElementById('text').innerHTML="Select a character to HEAL.";
                             showCharacter();
                         }
                         else{
@@ -443,7 +443,7 @@
                         break;
                     case "MERCY":
                         if(rHP>0){
-                            document.getElementById('text').innerHTML="This is a Boss Battle. You can not give mercy.";
+                            document.getElementById('text').innerHTML="No mercy. We die like beta.";
                             enemyTurn();
                             rehide();
                         }
@@ -489,7 +489,7 @@
                         break;
                     case "ATTACK":
                         if(mHP>0){
-                            document.getElementById('text').innerHTML="Select enemy to ATTACK.";
+                            document.getElementById('text').innerHTML="Select an enemy to ATTACK.";
                             showEnemy();
                         }
                         else{
