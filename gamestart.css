@@ -1,0 +1,146 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    margin-top: 2%;
+    font-family: 'Play';
+}
+.card{
+    background-color: black;
+    border-color: white;
+}
+.card-body{
+    padding-bottom: 10px;
+}
+.players{
+    width: 30%;
+    height: 70%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hideplayers{
+    display: none;
+}
+.enemies{
+    height: 70%;
+    width: 100%;
+}
+.minions{
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+.hideenemies{
+    display: none;
+}
+.minion{
+    height: 50%;
+    width: 100%;
+    margin: 0;
+}
+.boss{
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    float: right;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+}
+#hiddenButton1, #hiddenButton2{
+    width: 60%;
+    font-family: 'Play';
+}
+.choice{
+    font-family: 'Play';
+    font-size: 130%;
+}
+#msnoHP, #bellaHP, #rokHP{
+    float: left;
+    width: 100%;
+}
+#bossHP, #minion1HP, #minion2HP{
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+#game{
+    height: 80%;
+    position: relative;
+}
+#textbox{
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+#textbox .container-fluid{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+.column{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    float: left;
+    position: absolute;
+    z-index: 99;
+}
+.hide{
+    display: none;
+}
+.row1{
+    height: 75%;
+}
+.row2{
+    height: 25%;
+}
+.row2 p{
+    font-size: 130%;
+    padding-left: 2%;
+}
+.container{
+    height: 900px;
+    width: 1440px;
+}
+#chrSprites{
+    position: absolute;
+    height: 70%;
+    width: 52%;
+    bottom: 0;
+}
+.brSprite{
+    width: 27%;
+    height: 100%;
+    float: left;
+}
+.mSprite{
+    width:46%;
+    height:100%;
+    float:left;
+}
+#enSprites{
+    position:absolute;
+    height:76%;
+    width: 48%;
+    right: 0;
+    bottom: 0;
+}
+#minSprites{
+    width: 43%;
+    height:100%;
+    float: left;
+}
+.minSprite{
+    width: 100%;
+    height: 50%;
+}
+#bsSprite{
+    width: 57%;
+    height:100%;
+    float: left;
+}
