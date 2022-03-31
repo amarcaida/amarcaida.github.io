@@ -266,9 +266,9 @@ function enemyTurn(){
                 enemyTurn();
             }
             else{
-                changeSprite(2);
                 document.getElementById('text').innerHTML+=" The enemy has attacked. Bella lost 2 HP.";
                 bHP-=2;
+                changeSprite(2);
             }
             break;
         case 2:
@@ -276,9 +276,9 @@ function enemyTurn(){
                 enemyTurn();
             }
             else{
-                changeSprite(3);
                 document.getElementById('text').innerHTML+=" The enemy has attacked. Rok lost 2 HP.";
                 rHP-=2;
+                changeSprite(3);
             }
             break;
         case 3:
@@ -286,19 +286,19 @@ function enemyTurn(){
                 enemyTurn();
             }
             else{
-                changeSprite(1);
                 document.getElementById('text').innerHTML+=" The enemy has attacked. Miss No lost 2 HP.";
                 mHP-=2;
+                changeSprite(1);
             }
             break;                   
         default:
-            for(i=1; i<4; i++){
-                changeSprite(i);
-            }
             document.getElementById('text').innerHTML+=" The enemy has attacked. All party members has lost 2 HP.";
             bHP-=2;
             rHP-=2;
             mHP-=2;
+            for(i=1; i<4; i++){
+                changeSprite(i);
+            }
             break;
         }
     setHP();
@@ -633,9 +633,6 @@ function choice(event){
                 case 2:
                     document.getElementById('text').innerHTML="The enemies attacked. No HP was lost. Boss lost 3 HP";
                     bsHP-=3;
-                    bHP=bHP;
-                    rHP=rHP;
-                    mHP=mHP;
                     MP-=1;
                     changeSprite(6);
                     playAudio(6);
