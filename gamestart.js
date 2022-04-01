@@ -640,6 +640,7 @@ function choice(event){
                     setHP();
                     break;
                 }
+                checkWinLoss();
             }
             else
                 document.getElementById('text').innerHTML="Not enough mana. Need at least 2."
