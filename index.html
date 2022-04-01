@@ -12,6 +12,9 @@
                 background-position-x: center;
                 object-fit: cover;
             }
+            .fill{
+                width: 100%;
+            }
             img:not(img#title){
                 margin-top: 1%;
                 max-height: 70.98px;
@@ -86,10 +89,18 @@
     </head>
     <body onload="changeBG()">
         <div class="container">
-            <a href=""><img id="title" class="img-fluid" src="images/menu/title.png" alt="Game Title: BATTLE"></a>
-            <a href="gamestart.html"><img id="play" class="img-fluid" src="images/menu/play.png" alt="play button" onmouseover="hover(1);" onmouseout="unhover(1);"></a>
-            <a href=""><img id="instructions" class="img-fluid" src="images/menu/instructions.png" alt="instructions button" onmouseover="hover(2);" onmouseout="unhover(2);"></a>
-            <a href=""><img id="credits" class="img-fluid" src="images/menu/credits.png" alt="credits button" onmouseover="hover(3);" onmouseout="unhover(3);"></a>
+            <div class="fill">
+                <a href=""><img id="title" class="img-fluid" src="images/menu/title.png" alt="Game Title: BATTLE"></a>
+            </div>
+            <div class="fill">
+                <a href="gamestart.html"><img id="play" class="img-fluid" src="images/menu/play.png" alt="play button" onmouseover="hover(1);" onmouseout="unhover(1);"></a>
+            </div>
+            <div class="fill">
+                <a href=""><img id="instructions" class="img-fluid" src="images/menu/instructions.png" alt="instructions button" onmouseover="hover(2);" onmouseout="unhover(2);"></a>
+            </div>
+            <div class="fill">
+                <a href=""><img id="credits" class="img-fluid" src="images/menu/credits.png" alt="credits button" onmouseover="hover(3);" onmouseout="unhover(3);"></a>
+            </div>
         </div>
     </body>
 </html>
