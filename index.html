@@ -4,25 +4,26 @@
         <title>BATTLE START MENU</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             body{
                 background-repeat: no-repeat;
                 background-color: black;
                 background-position-x: center;
                 object-fit: cover;
+            }
+            .container{
+                width: 51%;
                 text-align: center;
             }
             img:not(img#title){
-                margin-left: auto;
-                margin-right: auto;
+                margin-top: 1%;
                 min-height: 70.98px;
                 min-width: 492.23px;
                 max-height: 105px;
                 max-width: 728px;
             }
             img#title{
-                margin-left: auto;
-                margin-right: auto;
                 min-height: 206.22px;
                 min-width: 492.23px;
                 max-height: 305px;
@@ -87,11 +88,11 @@
         </script>
     </head>
     <body onload="changeBG()">
-        <div>
-            <a href=""><img id="title" src="images/menu/title.png" alt="Game Title: BATTLE"></a>
-            <a href="gamestart.html"><img id="play" src="images/menu/play.png" alt="play button" onmouseover="hover(1);" onmouseout="unhover(1);"></a>
-            <a href=""><img id="instructions" src="images/menu/instructions.png" alt="instructions button" onmouseover="hover(2);" onmouseout="unhover(2);"></a>
-            <a href=""><img id="credits" src="images/menu/credits.png" alt="credits button" onmouseover="hover(3);" onmouseout="unhover(3);"></a>
+        <div class="container">
+            <a href=""><img id="title" class="img-fluid" src="images/menu/title.png" alt="Game Title: BATTLE"></a>
+            <a href="gamestart.html"><img id="play" class="img-fluid" src="images/menu/play.png" alt="play button" onmouseover="hover(1);" onmouseout="unhover(1);"></a>
+            <a href=""><img id="instructions" class="img-fluid" src="images/menu/instructions.png" alt="instructions button" onmouseover="hover(2);" onmouseout="unhover(2);"></a>
+            <a href=""><img id="credits" class="img-fluid" src="images/menu/credits.png" alt="credits button" onmouseover="hover(3);" onmouseout="unhover(3);"></a>
         </div>
     </body>
 </html>
