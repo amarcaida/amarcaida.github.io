@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RPGCast GAME TEST</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            body{
+                background-image: url('images/menu/background/msnoBG.png');
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position-x: center;
+                object-fit: cover;
+            }
+            .container{
+                width: 51%;
+            }
+            img:not(img#title){
+                margin-top: 1%;
+                max-height: 70.98px;
+                max-width: 492.23px;
+                height: 12%;
+            }
+            img#title{
+                max-height: 305px;
+            }
+            .container{
+                text-align: center;
+            }
+        </style>
+        <script>
+            function rng(num){
+                num = Math.floor(Math.random() * 4);
+                return num;
+            }
+            function changeBG(){
+                var num = Math.floor(Math.random() * 4);
+                switch(num){
+                    case 1:
+                        console.log('ms no background');
+                        document.body.style.backgroundImage = "url('images/menu/background/msnoBG.png')";
+                    break;
+                    case 2:
+                        console.log('bella background');
+                        document.body.style.backgroundImage = "url('images/menu/background/bellaBG.png')";
+                    break;
+                    case 3:
+                        console.log('rok background');
+                        document.body.style.backgroundImage = "url('images/menu/background/rokBG.png')";
+                    break;
+                }
+            }
+            function hover(x){
+                switch(x){
+                    case 1:
+                        document.getElementById('play').setAttribute('src', 'images/menu/play-hover.png');
+                        document.body.style.backgroundImage = "url('images/menu/background/msnoBG.png')";
+                    break;
+                    case 2:
+                        document.getElementById('instructions').setAttribute('src', 'images/menu/instructions-hover.png');
+                        document.body.style.backgroundImage = "url('images/menu/background/bellaBG.png')";
+                    break;
+                    case 3:
+                        document.getElementById('credits').setAttribute('src', 'images/menu/credits-hover.png');
+                        document.body.style.backgroundImage = "url('images/menu/background/rokBG.png')";
+                    break;
+                }
+            }
+            function unhover(y){
+                switch(y){
+                    case 1:
+                        document.getElementById('play').setAttribute('src', 'images/menu/play.png');
+                    break;
+                    case 2:
+                        document.getElementById('instructions').setAttribute('src', 'images/menu/instructions.png');
+                    break;
+                    case 3:
+                        document.getElementById('credits').setAttribute('src', 'images/menu/credits.png');
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body onload="changeBG()">
+        <div class="container">
+            <a href=""><img id="title" class="img-fluid" src="images/menu/title.png" alt="Game Title: BATTLE"></a>
+            <a href="gamestart.html"><img id="play" class="img-fluid" src="images/menu/play.png" alt="play button" onmouseover="hover(1);" onmouseout="unhover(1);"></a>
+            <a href=""><img id="instructions" class="img-fluid" src="images/menu/instructions.png" alt="instructions button" onmouseover="hover(2);" onmouseout="unhover(2);"></a>
+            <a href=""><img id="credits" class="img-fluid" src="images/menu/credits.png" alt="credits button" onmouseover="hover(3);" onmouseout="unhover(3);"></a>
+        </div>
+    </body>
+</html>
