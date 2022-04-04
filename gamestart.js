@@ -7,6 +7,24 @@ var MP = 0;
 var win, lose;
 win = lose = false;
 
+var imgs = document.images,
+    len = imgs.length,
+    counter = 0;
+
+[].forEach.call( imgs, function( img ) {
+    if(img.complete)
+      incrementCounter();
+    else
+      img.addEventListener( 'load', incrementCounter, false );
+} );
+
+function incrementCounter() {
+    counter++;
+    if ( counter === len ) {
+        console.log( 'All images loaded!' );
+    }
+}
+
 function playAudio(a){
     var sfx = document.getElementById("audio");
     switch(a){
