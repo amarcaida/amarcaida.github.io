@@ -43,11 +43,17 @@ function playAudio(a){
 function checkWinLoss(){
     if(bsHP==0 && m1HP==0 && m2HP==0){
         win=true;
+        console.log('you win');
+        document.getElementById('WinLose').src="images/winlose/win.png";
+        document.getElementById('winlose').style.display="block";
+        console.log('display done');
         document.getElementById('text').innerHTML="YOU WON.";
         playAudio(1);
     }
     else if(mHP==0 && bHP==0 && rHP==0){
         lose=true;
+        document.getElementById('WinLose').src="images/winlose/lose.png";
+        document.getElementById('winlose').style.display="block";
         document.getElementById('text').innerHTML="YOU LOST.";
         playAudio(2);
     }
@@ -55,6 +61,7 @@ function checkWinLoss(){
         win, lose = false;
     }
     if(win==true || lose==true){
+        console.log('back to menu');
         backtomenu();
     }
 }
