@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GAME START</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/menu/tab-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=Play:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="gamestart.css">
+        <script src="gamestart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row1">
+                <h1>BOSS BATTLE</h1>
+                <div id="game">
+                    <div id="winlose">
+                        <img id="WinLose" src="images/winlose/win.png" alt="Win or Lose text">
+                    </div>
+                    <div id="chrSprites">
+                        <div class="brSprite">
+                            <img id="bellaSprite" alt="Bella" src="images/bella/bella-idle.gif">
+                        </div>
+                        <div class="brSprite">
+                            <img id="rokSprite" alt="Rok" src="images/rok/rok-idle.gif">
+                        </div>
+                        <div class="mSprite">
+                            <img id="msnoSprite" alt="Ms No" src="images/msno/msno-idle.gif">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h4 id="msnoHP">MISS NO: 10 HP</h4>
+                        <h4 id="bellaHP">BELLA: 10 HP</h4>
+                        <h4 id="rokHP">ROK: 10 HP</h4>
+                        <p id="mana">MANA: 0</p>
+                        <div class="players hideplayers" onclick="selectCharacter(1);"></div>
+                        <div class="players hideplayers" onclick="selectCharacter(2);"></div>
+                        <div class="players hideplayers" onclick="selectCharacter(3);"></div>
+                    </div>
+                    <div id="enSprites">
+                        <div id="minSprites">
+                            <div class="minSprite">     
+                                <img id="min1Sprite" alt="minion 1" src="images/minions/minion-idle.gif">                  
+                            </div>
+                            <div class="minSprite">  
+                                <img id="min2Sprite" alt="minion 2" src="images/minions/minion-idle.gif">                            
+                            </div>
+                        </div>
+                        <div id="bsSprite">
+                            <img id="bossSprite" alt="boss" src="images/boss/boss-idle.gif">
+                        </div>
+                    </div>
+                    <div class="column" style="right: 0;">
+                        <h4 id="bossHP">BOSS: 20 HP</h4>
+                        <h4 id="minion1HP">MINION 1: 10 HP</h4>
+                        <h4 id="minion2HP">MINION 2: 10 HP</h4>
+                        <div class="enemies hideenemies">
+                            <div class="minions">
+                                <div class="minion" onclick="selectCharacter(4);"></div>
+                                <div class="minion" onclick="selectCharacter(5);"></div>
+                            </div>
+                            <div class="boss" onclick="selectCharacter(6);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="textbox">
+                    <div class="container-fluid">
+                        <p id="text">WAITING FOR MOVE...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <p>CHOOSE YOUR MOVE.</p>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button class="btn btn-outline-warning hide" id="hiddenButton1" onclick="choice(event);">.</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-warning hide" id="hiddenButton2" onclick="choice(event);">.</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                            <div class="col">
+                                <button class="btn btn-block btn-primary choice" onclick="displayBella();">BELLA</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-block btn-success choice" onclick="displayRok();">ROK</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-block btn-danger choice" onclick="displayMno();">MISS NO</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <audio hidden id="audio" src="audio/win.mp3"></audio>
+            </div>
+        </div>
+    </body>
+</html>
